@@ -3,6 +3,7 @@ import { FaBitcoin, FaRegNewspaper, FaGithub, FaLinkedin } from "react-icons/fa"
 import { FcBullish } from "react-icons/fc";
 import { RiArrowRightSFill } from "react-icons/ri";
 import { useState } from "react";
+import img from "../../dist/img/logo.png";
 
 
 
@@ -31,7 +32,7 @@ export function Nav(){
             </div>
         </div>
         <nav>
-            <img src="./img/logo.png" rel="logo-coins-Brands" />
+            <img src={img} rel="logo-coins-Brands" />
             <button id="cotacao"type="button"><a href="#"><FaBitcoin/> COTAÇÂO</a></button>
             <button id="bolsa-de-valores"type="button"><FcBullish/> BOLSA DE VALORES</button>
             <button id="noticias" type="button"><FaRegNewspaper/> NOTICIAS</button>
