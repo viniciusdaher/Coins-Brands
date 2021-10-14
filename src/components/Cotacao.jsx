@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "../../style/cotacao.scss"
+import "../style/cotacao.scss"
 import { Convercao } from "./Convercao";
 import { Graphic } from "./Graphic";
 import { Info } from "./Info";

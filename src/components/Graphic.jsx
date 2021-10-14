@@ -1,7 +1,7 @@
 
 import React, { PureComponent, useEffect, useState } from 'react';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
-import "../../style/graphic.scss"
+import "../style/graphic.scss"
 import { DataGraphic } from './DataGraphic';
 import { Variation } from './Variation';
 

@@ -1,11 +1,13 @@
-import "../../style/nav.scss"
+import "../style/nav.scss"
 import { FaBitcoin, FaRegNewspaper, FaGithub, FaLinkedin } from "react-icons/fa";
 import { FcBullish } from "react-icons/fc";
 import { RiArrowRightSFill } from "react-icons/ri";
 import { useState } from "react";
 
-export function Nav(){
 
+
+
+export function Nav(){
     const [menuMode, setMenuMode] = useState(false);
     const isOpenMenu = () => {
         const container = document.getElementsByClassName("container")[0]
@@ -29,7 +31,7 @@ export function Nav(){
             </div>
         </div>
         <nav>
-            <img rel="logo-coins-Brands" src="../../img/logo.png"></img>
+            <img src="./img/logo.png" rel="logo-coins-Brands" />
             <button id="cotacao"type="button"><a href="#"><FaBitcoin/> COTAÇÂO</a></button>
             <button id="bolsa-de-valores"type="button"><FcBullish/> BOLSA DE VALORES</button>
             <button id="noticias" type="button"><FaRegNewspaper/> NOTICIAS</button>

@@ -1,4 +1,4 @@
-import "../../style/cotacao.scss"
+import "../style/cotacao.scss"
 
 export function Moedas(props){
     
