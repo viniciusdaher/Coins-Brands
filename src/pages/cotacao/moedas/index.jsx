@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "../style/cotacao.scss"
+import "../../../style/cotacao.scss"
 import { Convercao } from "./Convercao";
 import { Graphic } from "./Graphic";
 import { Info } from "./Info";
@@ -7,10 +7,7 @@ import { Moedas } from "./Moedas";
 import { CgArrowsExchangeAlt } from "react-icons/cg";
 import { BsArrowLeftRight } from "react-icons/bs";
 
-
-
-
-export function Cotacao(){
+export default function Cotacao() {
     const [moeda, setMoeda] = useState([])
     const [valor, setValor] = useState("")
     const [tooltip, setTooltip] = useState("tooltip")
@@ -85,3 +82,6 @@ export function Cotacao(){
     </> 
     );
 }    
+
+
+

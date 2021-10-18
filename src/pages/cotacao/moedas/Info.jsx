@@ -1,4 +1,4 @@
-import "../style/info.scss"
+import "../../../style/info.scss"
 import { BiDownArrow } from "react-icons/bi";
 import { OpenGraphic } from "./OpenGraphic";
 

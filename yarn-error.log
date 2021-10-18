@@ -1,8 +1,8 @@
 Arguments: 
-  /usr/bin/node /usr/share/yarn/bin/yarn.js add url-loader
+  /usr/bin/node /usr/share/yarn/bin/yarn.js add react-router-dom
 
 PATH: 
-  /home/viniciusd/.vscode-server/bin/ee8c7def80afc00dd6e593ef12f37756d8f504ea/bin:/home/viniciusd/.zinit/polaris/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Razer Chroma SDK/bin:/mnt/c/Program Files/Razer Chroma SDK/bin:/mnt/c/Program Files (x86)/Razer/ChromaBroadcast/bin:/mnt/c/Program Files/Razer/ChromaBroadcast/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/WINDOWS/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files (x86)/Yarn/bin/:/mnt/c/Users/vinic/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/vinic/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/vinic/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/vinic/AppData/Roaming/npm:/mnt/c/Users/vinic/AppData/Local/Yarn/bin
+  /home/viniciusd/.vscode-server/bin/c13f1abb110fc756f9b3a6f16670df9cd9d4cf63/bin:/home/viniciusd/.zinit/polaris/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Razer Chroma SDK/bin:/mnt/c/Program Files/Razer Chroma SDK/bin:/mnt/c/Program Files (x86)/Razer/ChromaBroadcast/bin:/mnt/c/Program Files/Razer/ChromaBroadcast/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/WINDOWS/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files (x86)/Yarn/bin/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Users/vinic/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/vinic/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/vinic/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/vinic/AppData/Roaming/npm:/mnt/c/Users/vinic/AppData/Local/Yarn/bin:/mnt/c/Users/vinic/.dotnet/tools
 
 Yarn version: 
   1.22.5
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/url-loader: ETIMEDOUT
+  Error: https://registry.yarnpkg.com/react-router-dom: ETIMEDOUT
       at Timeout._onTimeout (/usr/share/yarn/lib/cli.js:141409:19)
       at listOnTimeout (internal/timers.js:557:17)
       at processTimers (internal/timers.js:500:7)
@@ -26,6 +26,7 @@ npm manifest:
     "main": "index.js",
     "license": "MIT",
     "dependencies": {
+      "file-loader": "^6.2.0",
       "moment": "^2.29.1",
       "react": "^17.0.2",
       "react-dom": "^17.0.2",
@@ -2170,6 +2171,14 @@ Lockfile:
     dependencies:
       websocket-driver ">=0.5.1"
   
+  file-loader@^6.2.0:
+    version "6.2.0"
+    resolved "https://registry.yarnpkg.com/file-loader/-/file-loader-6.2.0.tgz#baef7cf8e1840df325e4390b4484879480eebe4d"
+    integrity sha512-qo3glqyTa61Ytg4u73GultjHGjdRyig3tG6lPtyX/jOEJvHif9uB0/OCI2Kif6ctF3caQTW2G5gym21oAsI4pw==
+    dependencies:
+      loader-utils "^2.0.0"
+      schema-utils "^3.0.0"
+  
   fill-range@^7.0.1:
     version "7.0.1"
     resolved "https://registry.yarnpkg.com/fill-range/-/fill-range-7.0.1.tgz#1919a6a7c75fe38b2c7c77e5198535da9acdda40"
@@ -2741,6 +2750,15 @@ Lockfile:
       big.js "^5.2.2"
       emojis-list "^3.0.0"
       json5 "^1.0.1"
+  
+  loader-utils@^2.0.0:
+    version "2.0.0"
+    resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-2.0.0.tgz#e4cace5b816d425a166b5f097e10cd12b36064b0"
+    integrity sha512-rP4F0h2RaWSvPEkD7BLDFQnvSf+nK+wr3ESUjNTyAGobqrijmW92zc+SO6d4p4B1wh7+B/Jg1mkQe5NYUEHtHQ==
+    dependencies:
+      big.js "^5.2.2"
+      emojis-list "^3.0.0"
+      json5 "^2.1.2"
   
   locate-path@^5.0.0:
     version "5.0.0"
@@ -3650,7 +3668,7 @@ Lockfile:
       ajv "^6.12.4"
       ajv-keywords "^3.5.2"
   
-  schema-utils@^3.1.0, schema-utils@^3.1.1:
+  schema-utils@^3.0.0, schema-utils@^3.1.0, schema-utils@^3.1.1:
     version "3.1.1"
     resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-3.1.1.tgz#bc74c4b6b6995c1d88f76a8b77bea7219e0c8281"
     integrity sha512-Y5PQxS4ITlC+EahLuXaY86TXfR7Dc5lw294alXOq86JAHCihAIZfqv8nNCWvaEJvaC51uN9hbLGeV0cFBdH+Fw==

@@ -1,4 +1,3 @@
-import "../style/cotacao.scss"
 
 export function Moedas(props){
     
